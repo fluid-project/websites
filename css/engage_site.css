@@ -68,7 +68,7 @@ width:395px;
                border:3px solid #414042;
                border-width:3px 0;
                padding:25px 40px;
-               margin:30px -40px 0;
+               margin:30px 0 0 -40px;
            }
            .bar span {
             font-size:18px;
