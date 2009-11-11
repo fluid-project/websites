@@ -4,7 +4,7 @@ var engagePage = engagePage || {};
     engagePage.init = function () {
         var dialog = $(".dialog");
         
-        fluid.videoPlayer(".videoPlayer", {
+        var player = fluid.videoPlayer(".videoPlayer", {
             sources: [
                 {
                     src: "media/engage-demo-mobile.mp4",
@@ -15,7 +15,7 @@ var engagePage = engagePage || {};
                     type: "video/ogg"
                 },
                 {
-                    src: "http://www.youtube.com/fluidproject",
+                    src: "http://www.youtube.com/v/atnNJw6j0kE&hl=en&fs=1&",
                     type: "youtube"
                 }
             ]
@@ -32,6 +32,9 @@ var engagePage = engagePage || {};
             dialog.dialog("open");
         });
         
+        dialog.bind('dialogclose', function() {
+            player.pause();
+        });
      
     };
 })(jQuery);
