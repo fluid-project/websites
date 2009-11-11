@@ -1,31 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 	<head>
-    	<link rel="stylesheet" href="../fluid-all/fluid-infusion/src/webapp/framework/fss/css/fss-reset.css" />
-    	<link rel="stylesheet" href="../fluid-all/fluid-infusion/src/webapp/framework/fss/css/fss-layout.css" />
+    	<link rel="stylesheet" href="infusion/src/webapp/framework/fss/css/fss-reset.css" />
+    	<link rel="stylesheet" href="infusion/src/webapp/framework/fss/css/fss-layout.css" />
         <style type="text/css">
-        	html {
-            	background-color:#2d2d2d;
-            }
-        	html,body {
-            	height:100%;
-            }
+			html {
+				background-color:transparent;
+			}
+        	body {
+				width:1280px;
+				margin:0 auto;
+				background:#2d2d2d url(images/background.png) repeat-y center center;
+			}
             a {
             	color:#C2DB70;
             }
         	.grey_noise {
-                background:url(images/grey_noise_repeater.png) repeat top left;
+                background:url(images/base.png) repeat right top;
                 height:100%;
                 min-height:750px;
                 position:relative;
-            }
-            .grey_noise h1 {
-            	height:100%;
-                width:100%;
-                margin:0;
-                padding:0;
-                background:url(images/base.png) no-repeat right top;
-				text-indent:-245px;
             }
             .grey_noise .contact {
 				color:#000000;
@@ -36,9 +30,9 @@
 				top:50px;
             }
             .credit {
-            	position:absolute;
-                bottom:0px;
-                right:25px;
+            	margin-right:40px;
+				margin-top:800px;
+				text-align:right;
             }
             .credit a {
             	color:#739B44;
@@ -57,7 +51,7 @@
 				font-family:Arial;
                 font-size:1.8em;
                 right:25px;
-            	line-height:2em;
+            	line-height:1.3em;
             	position:absolute;
             	top:345px;
             	width:395px;
@@ -109,8 +103,7 @@
 
     <body>
     	<div class="fl-container-flex50 fl-force-left grey_noise">
-        	<h1>Fluid Engage: lorem ipsum</h1>
-            <a class="contact" href="http://fluidproject.org/about-us/contact-us/">Contact Us </a>
+        	<a class="contact" href="http://fluidproject.org/about-us/contact-us/">Contact Us </a>
 			<p class="slogan">
             	Transforming museum content for <strong>mobile</strong>, <strong>web</strong>, and <strong>in-house</strong> experiences — all for the delight of the visitor.
             </p>
