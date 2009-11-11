@@ -1,0 +1,96 @@
+html {
+   background-color:transparent;
+  }
+        body {
+   width:960px;
+   margin:0 auto;
+   background:#2d2d2d url(../images/background.png) repeat-y center center;
+  }
+           a {
+            color:#C2DB70;
+           }
+        .grey_noise {
+               background:url(../images/base.jpg) no-repeat right top;
+               height:100%;
+               min-height:750px;
+               position:relative;
+           }
+           .grey_noise .contact {
+   color:#000000;
+   font-size:1.1em;
+               font-weight:bold;
+   position:absolute;
+   right:62px;
+   top:50px;
+           }
+           .credit {
+            margin-right:40px;
+   margin-top:800px;
+   text-align:right;
+           }
+           .credit a {
+            color:#739B44;
+           }
+           .screencast {
+            background:url(../images/watch_button.jpg) no-repeat top left;
+               width:305px;
+               height:230px;
+               text-indent:-500px;
+               position:absolute;
+               top:520px;
+               right: 25px;
+               overflow:hidden;
+           }
+           .slogan {
+   font-family:Arial;
+   font-size:1.8em;
+line-height:1.3em;
+position:absolute;
+right:40px;
+text-align:right;
+top:345px;
+width:395px;
+           }
+
+           .art_bg {
+            background:#2D2D2D;
+               height:100%;
+               color:#fff;
+           }
+           .art_bg .content {
+            font-size:1.5em;
+   line-height:1.5em;
+   margin:125px 0 0;
+               padding:0 0 0 40px;
+           }
+           .bar {
+            background-color:#000;
+               border:3px solid #414042;
+               border-width:3px 0;
+               padding:25px 40px;
+               margin:30px -40px 0;
+           }
+           .bar span {
+            font-size:18px;
+               line-height:1.25em;
+           }
+           .bar span a {
+            display:block;
+           }
+
+           .links {
+            font-size:12px;
+           }
+           .links em {
+            padding:40px 0 10px;
+               display:block;
+               font-size:1.4em;
+           }
+           .links p {
+            color:#CCC;
+           }
+           .links a {
+           }
+  .credit a {
+   display:block;
+  }

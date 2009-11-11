@@ -3,19 +3,30 @@
 	<head>
     	<link rel="stylesheet" href="infusion/src/webapp/framework/fss/css/fss-reset.css" />
     	<link rel="stylesheet" href="infusion/src/webapp/framework/fss/css/fss-layout.css" />
+        <link rel="stylesheet" href="css/engage_site.css" />
+        <link rel="stylesheet" href="infusion/src/webapp/lib/jquery/ui/css/fl-theme-coal/coal.css" />
+        <link rel="stylesheet" href="videoPlayer/css/player.css" />
+        
+        <script type="text/javascript" src="infusion/src/webapp/lib/jquery/core/js/jquery.js"></script>
+        <script type="text/javascript" src="infusion/src/webapp/lib/jquery/ui/js/ui.core.js"></script>
+        <script type="text/javascript" src="infusion/src/webapp/lib/jquery/ui/js/ui.dialog.js"></script>
+        <script type="text/javascript" src="videoPlayer/js/ui.a11y.slider.js"></script>
+        <script type="text/javascript" src="infusion/src/webapp/lib/json/js/json2.js"></script>
+        <script type="text/javascript" src="infusion/src/webapp/framework/core/js/Fluid.js"></script>
+        <script type="text/javascript" src="infusion/src/webapp/framework/core/js/jquery.keyboard-a11y.js"></script>
+        <script type="text/javascript" src="videoPlayer/js/VideoPlayer.js"></script>
+        <script type="text/javascript" src="js/engage_site.js"></script>
     </head>
 
-    <body>
+    <body class="fl-theme-coal">
     	<div class="fl-container-flex50 fl-force-left grey_noise">
-        	<a class="contact" href="http://fluidproject.org/about-us/contact-us/">Contact Us</a>
+        	<a class="contact" href="http://fluidproject.org/about-us/contact-us/">Contact Us </a>
 			<p class="slogan">
             	Transforming museum content for <strong>mobile</strong>, <strong>web</strong>, and <strong>in-house</strong> experiences - all for the delight of the visitor.
             </p>
-
             <a class="screencast" href="#">
             	Watch the mobile screencast
-           </a>
-
+            </a>
             <p class="credit">
             	An open source project funded by a grant from <a href="http://mellon.org/">The Andrew W. Mellon Foundation</a>
             </p>
@@ -33,25 +44,36 @@
                         <a href="http://wiki.fluidproject.org/display/fluid/Fluid+Engage">Look inside</a>
                     </span>
                     <span class="fl-col">
-                    	Download
-                        <a href="http://fluidengage.org/downloads/engage/0.1/">Engage 0.1</a>
+                    	Early adopters and developers
+                        <a href="http://fluidengage.org/downloads/engage/0.1/">Download Engage 0.1</a>
                     </span>
                 </p>
                 <div class="links">
                 	<em>Partners, Advisors, and Contributers</em>
+
             	    <p>
-            	        <a href="http://atrc.utoronto.ca/">University of Toronto</a>, <a href="http://www.dia.org/">Detroit Institute of Arts</a>, <a href="http://www.mccord-museum.qc.ca/en/">McCord Museum of Canadian History</a>,
-						<a href="http://www.movingimage.us/site/site.php">Museum of the Moving Image</a>, <a href="http://www.uoc.edu/portal/english/">Open University of Catalonia</a>,  <a href="http://www.sfu.ca/">Simon Fraser University</a>,
-						<a href="http://www.cam.ac.uk/">University of Cambridge</a>, <a href="http://www.colorado.edu/">University of Colorado</a>
+            	        <a href="http://atrc.utoronto.ca/">University of Toronto</a>  /  <a href="http://www.dia.org/">Detroit Institute of Arts</a>  /  <a href="http://www.mccord-museum.qc.ca/en/">McCord Museum of Canadian History</a>
+						<a href="http://www.movingimage.us/site/site.php">Museum of the Moving Image</a>  /  <a href="http://www.uoc.edu/portal/english/">Open University of Catalonia </a> /  <a href="http://www.sfu.ca/">Simon Fraser University</a>
+						<a href="http://www.cam.ac.uk/">University of Cambridge</a>  /  <a href="http://www.colorado.edu/">University of Colorado</a>
             	    </p>
 	        	    <p>
-            		    <a href="http://www.tate.org.uk/modern/">Tate Modern</a>, <a href="http://www.seattleartmuseum.org/">Seattle Art Museum</a>, <a href="http://www.mcn.edu/">Museum Computer Network</a>, <a href="http://www.walkerart.org/index.wac">Walker Art Center</a>,
-            		    <a href="http://americanart.si.edu/">Smithsonian American Art Museum</a>, <a href="http://omeka.org/">Omeka, Center for History and New Media</a>,
-            		    <a href="http://www.archimuse.com/">Museums and the Web</a>, <a href="http://www.ago.net/">Art Gallery of Ontario</a>, <a href="http://www.chin.gc.ca/English/index.html">Canadian Heritage Information Network</a>,
-            		    <a href="http://www.openexhibits.org/">Open Exhibits</a>, <a href="http://www.ideum.com/">Ideum</a>, <a href="http://www.moa.ubc.ca/">Museum of Anthropology, University of British Columbia</a>,
+            		    <a href="http://www.tate.org.uk/modern/">Tate Modern</a>  /  <a href="http://www.seattleartmuseum.org/">Seattle Art Museum</a>  /  <a href="http://www.mcn.edu/">Museum Computer Network</a>  /  <a href="http://www.walkerart.org/index.wac">Walker Art Center</a>
+            		    <a href="http://americanart.si.edu/">Smithsonian American Art Museum</a>  /  <a href="http://omeka.org/">Omeka, Center for History and New Media</a>
+            		    <a href="http://www.archimuse.com/">Museums and the Web</a>  /  <a href="http://www.ago.net/">Art Gallery of Ontario</a>  /  <a href="http://www.chin.gc.ca/English/index.html">Canadian Heritage Information Network</a>
+            		    <a href="http://www.openexhibits.org/">Open Exhibits</a>  /  <a href="http://www.ideum.com/">Ideum</a>  /  <a href="http://www.moa.ubc.ca/">Museum of Anthropology, University of British Columbia</a>
             		</p>
                 </div>
             </div>
         </div>
+        <div class="dialog" style="width:320px;height:480px;    ">
+            <div class="videoPlayer fl-videoPlayer">
+                <video class="flc-videoPlayer-video fl-container-flex" alt="A video demonstrating the Infusion video player">
+                    <!-- Anything you want to show if the user doesn't have an HTML 5-compatible browser goes here. -->
+                </video>
+            </div>
+        </div>
+        <script>
+            engagePage.init();
+        </script>
     </body>
 </html>
