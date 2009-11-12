@@ -13,10 +13,6 @@ var engagePage = engagePage || {};
                 {
                     src: "media/engage-demo-mobile.ogv",
                     type: "video/ogg"
-                },
-                {
-                    src: "http://www.youtube.com/v/atnNJw6j0kE&hl=en&fs=1&",
-                    type: "youtube"
                 }
             ]
         }); 
