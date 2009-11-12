@@ -20,7 +20,7 @@ var engagePage = engagePage || {};
         dialog.dialog({
             autoOpen: false, 
             modal: true,
-            width: 320,
+            width: window.HTMLMediaElement ? 320 : 450,
             title: "Engage Demo: Mobile"
         });
         
@@ -28,8 +28,10 @@ var engagePage = engagePage || {};
             dialog.dialog("open");
         });
         
-        dialog.bind('dialogclose', function() {
-            player.pause();
+        dialog.bind('dialogclose', function(){
+            try{
+                player.pause();
+            } catch(e){}
         });
      
     };
